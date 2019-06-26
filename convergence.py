@@ -59,9 +59,9 @@ plt.xlim(0, 4)
 plt.legend(('94% HPD', 'analytical', 'simulated'), prop={'size': 40})
 
 # summary
+pm.summary(t_0)
 pm.summary(t_1)
 pm.summary(t_2)
-pm.summary(t_3)
 
 # forest plot
 pm.forestplot([t_0, t_1, t_2], figsize=(16, 12), textsize=20, markersize=20)
